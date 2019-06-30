@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/holo_blue_bright"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/tool_bar"
+		/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="60dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:id="@+id/clickLayout"
+		android:layout_gravity="center_horizontal|top">
+		<view
+			class="org.pierre.remotedroid.client.view.ClickView"
+			android:layout_width="150dp"
+			android:layout_height="120dp"
+			android:layout_marginRight="7dp"
+			android:background="@drawable/l"
+			android:layout_weight="1"
+			android:id="@+id/leftClickView" />
+
+		<view
+			class="org.pierre.remotedroid.client.view.ClickView"
+			android:layout_width="150dp"
+			android:layout_height="120dp"
+			android:layout_marginRight="7dp"
+			android:background="@drawable/m"
+			android:layout_weight="1"
+			android:id="@+id/middleClickView" />
+
+		<view
+			class="org.pierre.remotedroid.client.view.ClickView"
+			android:layout_width="150dp"
+			android:layout_height="120dp"
+			android:background="@drawable/r"
+			android:layout_weight="1"
+			android:id="@+id/rightClickView" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/tabLayout"
+		android:layout_gravity="center_horizontal|bottom"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			style="?buttonBarButtonStyle"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/med"
+			android:id="@+id/Media" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/kb"
+			android:layout_marginTop="5dp"
+			style="?buttonBarButtonStyle"
+			android:layout_weight="1"
+			android:id="@+id/Keyboard" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/set"
+			android:layout_marginTop="5dp"
+			style="?buttonBarButtonStyle"
+			android:layout_weight="1"
+			android:id="@+id/Settings" />
+		<Button
+			android:layout_width="10dp"
+			android:layout_height="30dp"
+			android:background="@mipmap/media"
+			android:layout_marginTop="5dp"
+			style="?buttonBarButtonStyle"
+			android:layout_weight="1"
+			android:id="@+id/Media_player" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="212dp"
+		android:id="@+id/controlViewLayout"
+		android:layout_gravity="center"
+		android:layout_above="@+id/tabLayout"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_below="@+id/clickLayout">
+		<view
+			class="org.pierre.remotedroid.client.view.ControlView"
+			android:orientation="horizontal"
+			android:layout_marginTop="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/controlView">
+
+		</view>
+
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.pierre.remotedroid.client.activity.MediaActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>
+<!-- From: file:/F:/SmartMouseApp(28.07.2016)/PRemoteDroid%20Client2/pRemoteDroidClient/src/main/res/menu/menu_media.xml -->

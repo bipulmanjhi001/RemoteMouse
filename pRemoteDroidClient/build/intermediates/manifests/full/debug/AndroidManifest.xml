@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.pierre.remotedroid.client"
+    android:versionCode="47"
+    android:versionName="2010-05-23" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" >
+    </supports-screens>
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+
+    <application
+        android:name="org.pierre.remotedroid.client.app.PRemoteDroid"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.SearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.connection.ConnectionListActivity"
+            android:label="@string/text_connections"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.SettingsActivity"
+            android:label="@string/text_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.HelpActivity"
+            android:label="@string/text_help"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.FileExplorerActivity"
+            android:label="@string/text_file_explorer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.ControlActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.connection.ConnectionWifiEditActivity"
+            android:label="@string/text_wifi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.connection.ConnectionBluetoothEditActivity"
+            android:label="@string/text_bluetooth"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.connection.BluetoothDevicesActivity"
+            android:label="@string/text_bluetooth_devices"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="org.pierre.remotedroid.client.activity.MediaActivity"
+            android:label="@string/title_activity_media"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

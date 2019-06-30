@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Media player"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Light_Blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Press the Below Button to control the medial player otherwise use the vlc shotcut keys"
+        android:textSize="15dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_Next"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Next"
+        android:textSize="15dp"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_volumeup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="15dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_volumeup"
+            android:text="Play"
+            android:textSize="15dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/btn_volumedown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_play"
+            android:text="-"
+            android:textSize="15dp"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Prevous"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Previous"
+        android:textSize="15dp"
+
+        />
+
+</LinearLayout>
+</LinearLayout>
+<!-- From: file:/F:/SmartMouseApp(28.07.2016)/PRemoteDroid%20Client2/pRemoteDroidClient/src/main/res/layout/mediaplayerdialog.xml -->

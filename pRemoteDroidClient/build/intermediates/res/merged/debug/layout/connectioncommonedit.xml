@@ -1,0 +1,36 @@
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button
+		android:id="@+id/save"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/text_save" />
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/text_name" />
+		<EditText
+			android:id="@+id/name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/text_new_connection" />
+	</TableRow>
+	<TableRow
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/text_password" />
+		<EditText
+			android:id="@+id/password"
+			android:inputType="textPassword"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+</merge><!-- From: file:/F:/SmartMouseApp(28.07.2016)/PRemoteDroid%20Client2/pRemoteDroidClient/src/main/res/layout/connectioncommonedit.xml -->

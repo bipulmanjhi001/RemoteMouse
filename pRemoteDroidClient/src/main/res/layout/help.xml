@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background"
+	tools:context="org.pierre.remotedroid.client.activity.HelpActivity">
+
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/tool_bar"
+		/>
+
+	<ScrollView
+		android:layout_marginTop="70dp"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<TextView
+				android:text="@string/text_help_description"
+				android:textSize="20dp"
+				android:textStyle="bold"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:text="@string/text_help_description_content"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:text="@string/text_help_install"
+				android:textSize="20dp"
+				android:textStyle="bold"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:text="@string/text_help_install_content"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:text="@string/text_help_usage"
+				android:textSize="20dp"
+				android:textStyle="bold"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:text="@string/text_help_usage_content"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:text="@string/text_help_contact"
+				android:textSize="20dp"
+				android:textStyle="bold"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+			<TextView
+				android:text="@string/text_help_contact_content"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent" />
+		</LinearLayout>
+	</ScrollView>
+
+</RelativeLayout>

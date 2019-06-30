@@ -1,0 +1,32 @@
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background"
+	android:stretchColumns="1">
+
+	<include
+		layout="@layout/connectioncommonedit" />
+	<TableRow>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/text_address" />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<EditText
+				android:id="@+id/address"
+				android:editable="false"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<Button
+				android:id="@+id/edit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Edit" />
+		</LinearLayout>
+	</TableRow>
+</TableLayout><!-- From: file:/F:/SmartMouseApp(28.07.2016)/PRemoteDroid%20Client2/pRemoteDroidClient/src/main/res/layout/connectionbluetoothedit.xml -->

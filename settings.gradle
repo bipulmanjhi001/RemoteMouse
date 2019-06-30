@@ -1,0 +1,2 @@
+include ':pRemoteDroidProtocol'
+include ':pRemoteDroidClient'

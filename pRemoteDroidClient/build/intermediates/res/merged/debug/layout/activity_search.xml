@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="org.pierre.remotedroid.client.activity.SearchActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_wifi"
+        android:layout_marginLeft="12dp"
+        android:layout_above="@+id/search_bluetooth"
+        android:background="@drawable/search_wifi"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/search_bluetooth"
+        android:layout_alignEnd="@+id/search_bluetooth" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/search_bluetooth"
+        android:id="@+id/search_bluetooth"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/search_wifi">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_device"
+            android:background="@drawable/search"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/F:/SmartMouseApp(28.07.2016)/PRemoteDroid%20Client2/pRemoteDroidClient/src/main/res/layout/activity_search.xml -->

@@ -1,0 +1,103 @@
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background"
+	>
+
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:id="@+id/clickLayout">
+
+		<view
+			class="org.pierre.remotedroid.client.view.ClickView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:background="@drawable/l"
+			android:layout_weight="1"
+			android:id="@+id/leftClickView" />
+
+		<view
+			class="org.pierre.remotedroid.client.view.ClickView"
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:background="@drawable/m"
+			android:layout_weight="1"
+			android:id="@+id/middleClickView" />
+
+		<view
+			class="org.pierre.remotedroid.client.view.ClickView"
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/r"
+			android:layout_margin="10dp"
+			android:layout_weight="1"
+			android:id="@+id/rightClickView" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/tabIcon"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_gravity="right|bottom">
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginTop="5dp"
+			android:background="@drawable/med"
+			android:id="@+id/Media" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/kb"
+			android:layout_marginTop="5dp"
+			android:layout_weight="1"
+			android:id="@+id/Keyboard" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/set"
+			android:layout_marginTop="5dp"
+			android:layout_weight="1"
+			android:id="@+id/Settings" />
+
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@mipmap/media"
+			android:layout_marginTop="5dp"
+			android:layout_weight="1"
+			android:id="@+id/Media_player" />
+
+
+	</LinearLayout>
+
+	<view
+		class="org.pierre.remotedroid.client.view.ControlView"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="300dp"
+		android:layout_above="@+id/tabIcon"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/controlView"
+		android:layout_gravity="center">
+
+	</view>
+
+
+</FrameLayout>
